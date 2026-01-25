@@ -140,10 +140,10 @@ export default function GetStartedSection() {
         {/* Header */}
         <div ref={headerRef} className="mb-12 opacity-0">
           <h2 className="text-5xl lg:text-6xl font-black text-white mb-3">
-            Get started in seconds
+            Mulai dalam hitungan detik
           </h2>
           <p className="text-xl text-gray-500">
-            Deploy Next.js to Vercel
+            Buat keinginmu jadi nyata
           </p>
         </div>
 
@@ -168,9 +168,7 @@ export default function GetStartedSection() {
           <div ref={contentRef} className="opacity-0">
             <div className="space-y-6">
               <p className="text-lg text-gray-400 leading-relaxed">
-                Vercel is a frontend cloud from the creators of{' '}
-                <span className="text-white font-semibold">Next.js</span>, making it easy to get 
-                started with Next.js quickly.
+                NLFTs is a community-driven frontend library platform that makes it easy to get started with<span className="text-white font-semibold"> web development</span> quickly.
               </p>
               
               <p className="text-lg text-gray-400 leading-relaxed">

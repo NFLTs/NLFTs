@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "./assets/fragments/Navbar";
-import Footer from "./assets/fragments/Footer";
+import ClientLayout from "./assets/fragments/ClientLayout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,18 +13,18 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const metadata: Metadata = {
+  title: "NLFTs",
+  description: "Next Gen Protocol Documentation",
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="id">
-      <body>
-        <Navbar />
-
-        <main>
+    <html lang="id" suppressHydrationWarning>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <ClientLayout>
           {children}
-        </main>
-
-        <Footer />
+        </ClientLayout>
       </body>
     </html>
   );

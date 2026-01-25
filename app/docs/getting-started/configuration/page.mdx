@@ -1,0 +1,30 @@
+# Basic Configuration
+
+Learn how to customize the NLFTs Protocol to fit your project needs.
+
+## Configuration File
+
+The core configuration is managed through the `nlfts.config.ts` file located in your project root.
+
+```typescript
+export default {
+  theme: "dark",
+  protocol: "v1",
+  security: {
+    encrypted: true,
+  },
+};
+```
+
+## Environment Variables
+
+You can also use `.env.local` to define sensitive variables:
+
+| Variable | Description | Default |
+| :--- | :--- | :--- |
+| `NLFTS_API_KEY` | Your unique protocol access key | `null` |
+| `NLFTS_MODE` | The operation mode (dev/prod) | `dev` |
+
+## Advanced Settings
+
+For more complex setups, refer to the [Architecture Overview](/docs/concepts/architecture) section.

@@ -1,0 +1,49 @@
+# API Reference
+
+Welcome to the API Reference. Here you can find details about our endpoints.
+
+## GET /api/users
+
+Returns a list of all users in the system.
+
+### Request
+
+- **Method**: `GET`
+- **URL**: `/api/users`
+
+### Response (200 OK)
+
+```json
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john@example.com"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "email": "jane@example.com"
+  }
+]
+```
+
+## POST /api/users
+
+Creates a new user.
+
+### Request
+
+- **Method**: `POST`
+- **URL**: `/api/users`
+- **Body**: JSON object with `name` and `email`.
+
+### Response (201 Created)
+
+```json
+{
+  "id": 3,
+  "name": "New User",
+  "email": "new@example.com"
+}
+```
