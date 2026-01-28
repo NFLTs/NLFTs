@@ -1,56 +1,50 @@
-import { Layout, Navbar, Footer } from "nextra-theme-docs";
-import { getPageMap } from "nextra/page-map";
-import "nextra-theme-docs/style.css";
+import type { Metadata } from "next";
+import { DocsSidebar } from "@/app/assets/fragments/DocsUI";
 
-export default async function DocsLayout({
-  children,
+export const metadata: Metadata = {
+    title: {
+        template: "%s | NLFTs Docs",
+        default: "Documentation | NLFTs Protocol",
+    },
+    description: "Official guide for the NLFTs Protocol. Built by engineers, for engineers.",
+};
+
+export default function DocsLayout({
+    children,
 }: {
-  children: React.ReactNode;
+    children: React.ReactNode;
 }) {
-  const pageMap = await getPageMap();
+    return (
+        <div className="flex min-h-screen bg-slate-950 text-slate-200 selection:bg-indigo-500/30">
+            {/* Premium Navigation */}
+            <DocsSidebar />
 
-  return (
-    <Layout
-      pageMap={pageMap}
-      navbar={
-        <Navbar
-          logo={
-            <div className="flex items-center gap-2 select-none">
-              <div className="p-1.5 bg-indigo-600 rounded-lg hover:rotate-12 transition-transform duration-300">
-                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-              </div>
-              <span className="font-bold text-xl tracking-tight">
-                NLFTs<span className="text-indigo-500">_</span>DOCS
-              </span>
-            </div>
-          }
-          projectLink="https://github.com/your-repo/nlfts"
-        />
-      }
-      footer={
-        <Footer>
-          <div className="flex flex-col gap-2 text-sm">
-            <p className="font-medium">
-              © {new Date().getFullYear()} NLFTs Protocol. Built for elite developers.
-            </p>
-            <div className="flex gap-4 text-xs text-gray-400 font-mono uppercase tracking-widest">
-              <span>Status: Operational</span>
-              <span>Version: 4.6.1</span>
-            </div>
-          </div>
-        </Footer>
-      }
-      sidebar={{
-        defaultMenuCollapseLevel: 1,
-        toggleButton: true,
-      }}
-      toc={{
-        float: true,
-      }}
-    >
-      {children}
-    </Layout>
-  );
+            {/* Content Area */}
+            <main className="flex-1 lg:ml-72 min-h-screen relative">
+                {/* Glow Aura */}
+                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-indigo-500/5 blur-[120px] rounded-full pointer-events-none -z-10"></div>
+
+                <div className="max-w-4xl mx-auto pt-32 pb-24 lg:pt-24 px-6 lg:px-16">
+                    <div className="animate-in fade-in slide-in-from-bottom-5 duration-1000 fill-mode-both">
+                        {children}
+                    </div>
+                </div>
+
+                {/* Footer Area */}
+                <footer className="max-w-4xl mx-auto px-6 lg:px-16 py-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div className="flex flex-col gap-2">
+                        <span className="font-black text-white tracking-tighter italic">NLFTs Protocol</span>
+                        <span className="text-xs text-slate-500 italic">Built for the next generation of decentralized intelligence.</span>
+                    </div>
+                    <div className="flex gap-8 text-[10px] font-mono uppercase tracking-widest text-slate-500">
+                        <span className="flex items-center gap-2">
+                            <span className="w-1 h-1 bg-green-500 rounded-full animate-pulse"></span>
+                            Network: Active
+                        </span>
+                        <span>v1.0.4-LTS</span>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    );
 }
