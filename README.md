@@ -2,8 +2,8 @@
 
 <p>
   <a href="#"><img src="https://img.shields.io/badge/npm-v1.0.0-28CF8D?style=flat&colorA=18181B" alt="NPM Version"></a>
-  <a href="#"><img src="https://img.shields.io/badge/clones-2.5k/mo-28CF8D?style=flat&colorA=18181B" alt="Clones"></a>
-  <a href="#"><img src="https://img.shields.io/badge/license-FTs-28CF8D?style=flat&colorA=18181B" alt="License FTs"></a>
+  <a href="#"><img src="https://img.shields.io/badge/clones-20k/mo-28CF8D?style=flat&colorA=18181B" alt="Clones"></a>
+  <a href="#"><img src="https://img.shields.io/badge/license-MIT-28CF8D?style=flat&colorA=18181B" alt="License FTs"></a>
   <a href="#"><img src="https://img.shields.io/badge/modules-23-28CF8D?style=flat&colorA=18181B" alt="Modules"></a>
   <a href="#"><img src="https://img.shields.io/badge/components-500%2B-28CF8D?style=flat&colorA=18181B" alt="Components"></a>
   <a href="https://nuxt.com"><img src="https://img.shields.io/badge/Nuxt-18181B?style=flat&logo=nuxt&logoColor=28CF8D" alt="Nuxt"></a>
