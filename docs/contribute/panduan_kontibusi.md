@@ -1,5 +1,5 @@
 
-# Panduan Kontribusi NLFTs
+# Panduan Kontribusi NLFTs community
 
 Terima kasih telah tertarik untuk berkontribusi di **NLFTs**! Kami sangat menghargai setiap bantuan, mulai dari perbaikan *typo* kecil hingga pengembangan fitur besar. Untuk menjaga kualitas komunitas, kami menerapkan beberapa aturan dasar berikut:
 
