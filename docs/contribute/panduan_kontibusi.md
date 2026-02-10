@@ -13,10 +13,13 @@ Setiap kontribusi harus memiliki tujuan yang jelas. Saat mengajukan perubahan, A
 
 ## 🛠️ Alur Teknis (Workflow)
 
-Agar repositori tetap rapi, setiap kontributor wajib mengikuti langkah ini:
+Cek daftar masalah yang perlu bantuan di tab Issues dan cari label good first issue untuk pemula. Agar repositori tetap rapi, setiap kontributor wajib mengikuti langkah ini:
 
 * **Fork:** Lakukan *Fork* pada repositori resmi ke akun Anda.
-* **Branch Baru:** Jangan lakukan perubahan pada branch utama. Buatlah branch baru dengan nama fitur yang sedang dikerjakan (Contoh: `feature/nama-fitur` atau `fix/perbaikan-typo`).
+* **Branch Baru:** Jangan lakukan perubahan pada branch utama. Buatlah branch baru sesuai kategori agar rapi:
+    * `feat/nama-fitur` : Untuk menambah fitur baru.
+    * `fix/nama-bug` : Untuk memperbaiki kesalahan kode/bug.
+    * `docs/update-typo` : Untuk perbaikan tulisan atau dokumentasi.
 * **Pull Request (PR):** Kirimkan PR dari branch tersebut dengan deskripsi yang jelas.
 
 ---
@@ -31,7 +34,7 @@ Ini adalah peran bagi siapa saja yang ingin membantu secara sukarela. Anda bebas
 
 ### 2. Core Team (Organisasi Resmi)
 
-Anggota *Core Team* memiliki tanggung jawab lebih dalam mengelola ekosistem NLFTs. Untuk bergabung menjadi bagian dari tim resmi, terdapat syarat minimal yang harus dipenuhi:
+Anggota *Core Team* dipilih berdasarkan konsistensi dan kualitas kontribusinya bagi komunitas NLFTs. Untuk bergabung menjadi bagian dari tim resmi, terdapat syarat minimal yang harus dipenuhi:
 
 * **Merged PR:** Minimal telah melakukan **40 Pull Request** yang berhasil di-*merge*.
 * **Issue Solving:** Membantu menyelesaikan minimal **15 Issue**.
